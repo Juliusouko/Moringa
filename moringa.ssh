@@ -1,0 +1,5 @@
+#script to add files to Moringa Repository
+git remote add origin git@github.com:Juliusouko/Moringa.git
+git branch -M main
+git push -u origin main
+#end
