@@ -1,9 +1,10 @@
 body {
   background-color: antiquewhite;
-  color: black;
+  color:black;
   font-size: 19px;
-  /*margin: 5px 0 0 20px;*/
-  padding: 5px;
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo img{
@@ -28,3 +29,26 @@ body {
 .content {
   width: 50%;
 }
+
+.footer {
+  background-color: floralwhite;
+  color: white;
+  text-align: left;
+  margin-top: auto;
+  padding: 1px;
+  height: 70px;
+}
+h1,h2{
+  color: grey;
+}
+
+.copyright {
+  color: black;
+}
+
+/*.footer {
+  position: absolute;
+  bottom: 0;
+}*/
+/*The above code also sets  the footer to set at the bottom */
+
