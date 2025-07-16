@@ -14,15 +14,15 @@
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <div class="container nav-inner">
+    <div class="nav-inner">
       <div class="nav-logo">Julius Ouko</div>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="hamburger">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div>
+        <ul class="nav-links">
+        <li><a href="#contact" class="btn-contact" id="show-contact">Contact Me</a></li>
       </ul>
+      </div>
     </div>
   </nav>
 
@@ -63,6 +63,16 @@
       </div>
     </section>
   </main>
+
+  <section class="contact-section hidden" id="contact">
+  <form class="contact-form" action="https://formspree.io/f/manbypyg" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
 
   <footer class="footer" id="contact">
     <div class="social-icons">

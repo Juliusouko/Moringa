@@ -13,3 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   typeLetter();
 });
+
+// Clear form after submission
+  const form = document.querySelector(".contact-form");
+  form.addEventListener("submit", function (e) {
+    // Wait a bit before clearing to give time for redirect
+    setTimeout(() => {
+      form.reset();
+    }, 500);
+  });
+
+   const contactSection = document.getElementById("contact");
+  const showContactBtn = document.getElementById("show-contact");
+
+  showContactBtn.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent jump to #contact
+    contactSection.classList.remove("hidden");
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  });
