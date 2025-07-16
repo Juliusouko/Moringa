@@ -2,65 +2,80 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WHOAMI</title>
-  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julius Ouko | DevOps & Backend Developer</title>
+  <link rel="stylesheet" href="src/main.css" />
+  <link rel="shortcut icon" href="image/favicon for portfoilo3.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-  <div class="logo">
-    <img src="image/JON.png" alt="Julius Ouko picture">
-  </div>
-  <h1>WHOAMI ?</h1>
-  <div class="content">
-    <p>This is Julius Ouko a juniour fullstack developer currently studying Software Engineering at Moringa School.</p>
-    <p>I am open to any projects but mostly interested in Open source projects.
-      currently I am working on a project called Pokemon API which is a project that fetches data from an API and
-      displays it on the browser.
-      <br>Flexibility is one of my key strengths so i will be glad if you have anything for.
-    </p>
-  </div>
-  <div>
-    <h2>SKILLS</h2>
-    <ul>
-      <li>Linux efficiency and Troubleshooting</li>
-      <li>HTML basic static pages</li>
-      <li>CSS grid layouts</li>
-      <li>PostgreSQL Database</li>
-    </ul>
-  </div>
-  <footer></footer>
-  <div class="footer profiles">
-    <div class="rows">
-      <div class="column">
-        <p class="copyright">&copy; Julius Ouko 2025 </p>
-      </div>
-      <div class="column">
-        <p><a
-            href="https://www.linkedin.com/in/julius-ouko-0b3b372b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFgRRVSNQS2%2BlmXHv6miGng%3D%3D"
-            target="_blank" rel="noopener noreferrer"><img src="image/linkedin.png" alt="linkedin png" height="30px"
-              width="30px"></a></p>
-      </div>
-      <div class="column">
-        <p><a href="https://github.com/Juliusouko" target="_blank" rel="noopener noreferrer"><img src="image/github.png"
-              alt="github icon" height="30px" width="30px"></a></p>
-      </div>
-      <div class="column">
-        <p><a href="https://x.com/creationsoj" target="_blank" rel="noopener noreferrer"><img src="image/x-mark.png"
-              alt="x icon" height="30px" width="30px"></a></p>
-      </div>
-      <div class="column">
-        <p><img src="image/whatsapp.png" alt="whatsapp icon" width="30px" height="30px"><a href=""></a>
-        </p>
-      </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="nav-logo">Julius Ouko</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </div>
-  
+  </nav>
+
+
+  <header class="logo">
+    <img src="image/profilepic.jpg" alt="Julius Ouko picture" />
+  </header>
+
+  <main>
+    <section class="content" id="about">
+      <h1><span class="typewriter"></span></h1>
+      <p><strong>Julius Ouko</strong> — Junior fullstack developer currently studying Software Engineering at Moringa
+        School, Nairobi. I'm passionate about scalable backend systems, DevOps, and solving real-world problems through
+        cloud-native apps.</p>
+      <p>My first fullstack app (React + Node.js + PostgreSQL) is live: <a
+          href="https://techlogs-835b4.firebaseapp.com/" target="_blank">sample project</a>.</p>
+      <p>I’m actively seeking internship roles in <strong>QA Engineering</strong>, <strong>Backend Development</strong>,
+        or <strong>DevOps</strong>.</p>
+      <p>Currently working on a Linux personal assistant. Flexible, driven, and ready to contribute!</p>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h2>💼 Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">Linux & Troubleshooting</div>
+        <div class="skill-card">HTML & CSS</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">PostgreSQL</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Firebase</div>
+        <div class="skill-card">Railway</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Postman</div>
+        <div class="skill-card">Problem Solving</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/julius-ouko-0b3b372b5"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="https://x.com/creationsoj"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="https://github.com/Juliusouko"><i class="fab fa-github fa-lg"></i></a>
+    </div>
+    <div class="copyright">
+      <p>&copy; Julius Ouko 2025</p>
+    </div>
   </footer>
-  <!--ABOUT ME SECTION-->
-  <!--SKILLS SECTION-->
-  <!--FOOTER SECTION-->
+
+  <script src="src/app.js"></script>
 </body>
 
 </html>
